@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822AADC11F9AC684009C17EB /* FeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AADC01F9AC684009C17EB /* FeedViewModel.m */; };
+		82A934771FA055BE005E1958 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A934761FA055BE005E1958 /* CoreLocation.framework */; };
 		82B421FB1F9AA233003A344C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B421FA1F9AA233003A344C /* main.m */; };
 		82B421FE1F9AA233003A344C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B421FD1F9AA233003A344C /* AppDelegate.m */; };
 		82B422011F9AA233003A344C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B422001F9AA233003A344C /* ViewController.m */; };
@@ -15,6 +17,7 @@
 		82B422091F9AA233003A344C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B422071F9AA233003A344C /* LaunchScreen.storyboard */; };
 		82B422141F9AA233003A344C /* TestPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B422131F9AA233003A344C /* TestPOCTests.m */; };
 		82B4221F1F9AA233003A344C /* TestPOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B4221E1F9AA233003A344C /* TestPOCUITests.m */; };
+		82B4222E1F9AA2C8003A344C /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B4222D1F9AA2C8003A344C /* Feed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		822AADBF1F9AC684009C17EB /* FeedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewModel.h; sourceTree = "<group>"; };
+		822AADC01F9AC684009C17EB /* FeedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewModel.m; sourceTree = "<group>"; };
+		82A934761FA055BE005E1958 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		82B421F61F9AA233003A344C /* TestPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B421FA1F9AA233003A344C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82B421FC1F9AA233003A344C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		82B4221A1F9AA233003A344C /* TestPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B4221E1F9AA233003A344C /* TestPOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPOCUITests.m; sourceTree = "<group>"; };
 		82B422201F9AA233003A344C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B4222C1F9AA2C8003A344C /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		82B4222D1F9AA2C8003A344C /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A934771FA055BE005E1958 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A934751FA055BE005E1958 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82A934761FA055BE005E1958 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82B421ED1F9AA233003A344C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 				82B422121F9AA233003A344C /* TestPOCTests */,
 				82B4221D1F9AA233003A344C /* TestPOCUITests */,
 				82B421F71F9AA233003A344C /* Products */,
+				82A934751FA055BE005E1958 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +123,10 @@
 				82B421FD1F9AA233003A344C /* AppDelegate.m */,
 				82B421FF1F9AA233003A344C /* ViewController.h */,
 				82B422001F9AA233003A344C /* ViewController.m */,
+				82B4222C1F9AA2C8003A344C /* Feed.h */,
+				82B4222D1F9AA2C8003A344C /* Feed.m */,
+				822AADBF1F9AC684009C17EB /* FeedViewModel.h */,
+				822AADC01F9AC684009C17EB /* FeedViewModel.m */,
 				82B422021F9AA233003A344C /* Main.storyboard */,
 				82B422051F9AA233003A344C /* Assets.xcassets */,
 				82B422071F9AA233003A344C /* LaunchScreen.storyboard */,
@@ -274,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B422011F9AA233003A344C /* ViewController.m in Sources */,
+				82B4222E1F9AA2C8003A344C /* Feed.m in Sources */,
+				822AADC11F9AC684009C17EB /* FeedViewModel.m in Sources */,
 				82B421FE1F9AA233003A344C /* AppDelegate.m in Sources */,
 				82B421FB1F9AA233003A344C /* main.m in Sources */,
 			);
@@ -507,6 +531,7 @@
 				82B422251F9AA234003A344C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82B422261F9AA234003A344C /* Build configuration list for PBXNativeTarget "TestPOCTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +540,7 @@
 				82B422281F9AA234003A344C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82B422291F9AA234003A344C /* Build configuration list for PBXNativeTarget "TestPOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +549,7 @@
 				82B4222B1F9AA234003A344C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
